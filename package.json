@@ -1,0 +1,28 @@
+{
+  "name": "automationversion",
+  "version": "1.0.0",
+  "description": "自動上版",
+  "main": "index.js",
+  "scripts": {
+    "test:mocha": "mocha --color index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerryLee7788/AutomationVersion.git"
+  },
+  "keywords": [
+    "automation"
+  ],
+  "author": "terry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TerryLee7788/AutomationVersion/issues"
+  },
+  "homepage": "https://github.com/TerryLee7788/AutomationVersion#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.1.3",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
