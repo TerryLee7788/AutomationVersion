@@ -94,9 +94,7 @@ describe('自動上版', () => {
                 }
             }
             await waitUntilBranchSelectAppear()
-            setTimeout(async () => {
-                await done()
-            }, 5000);
+            await done()
         })()
     })
     it('點擊 [建置] 按鈕', function (done) {
