@@ -99,11 +99,11 @@ describe('自動上版', () => {
             }, 5000);
         })()
     })
-    // it('點擊 [建置] 按鈕', function (done) {
-    //     (async () => {
-    //         const selectElem = await driver.findElement(By.name('Submit'))
-    //         await selectElem.click();
-    //         await done()
-    //     })()
-    // })
+    it('點擊 [建置] 按鈕', function (done) {
+        (async () => {
+            const selectElem = await driver.findElement(By.name('Submit'))
+            await selectElem.click();
+            await done()
+        })()
+    })
 })
