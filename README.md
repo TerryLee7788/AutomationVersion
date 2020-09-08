@@ -19,5 +19,5 @@
 |USER_NAME|Lab Jenkins 帳號|
 |PASS_WORD|Lab Jenkins 密碼|
 |MINUTE|延遲時間(分鐘)|
-- 點擊 [build.sh](https://github.com/TerryLee7788/AutomationVersion/blob/master/build.sh)
+- 點擊 [delayBuild.sh](https://github.com/TerryLee7788/AutomationVersion/blob/master/sh/delayBuild.sh)
 

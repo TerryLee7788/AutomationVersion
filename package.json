@@ -4,7 +4,8 @@
   "description": "自動上版",
   "main": "index.js",
   "scripts": {
-    "test:mocha": "mocha --color index.js"
+    "test:mocha": "mocha --color ./src/index.js",
+    "delayBuild": "node ./src/delayBuild.js"
   },
   "repository": {
     "type": "git",
