@@ -9,7 +9,7 @@
 - [Clone this repository](https://github.com/TerryLee7788/AutomationVersion)
 - `npm i` 安裝套件
 - 下載 [chromedriver](http://chromedriver.storage.googleapis.com/index.html) 依照電腦 chrome 的版本下載
-- 將剛剛下載 driver 的目錄設定到 [環境變數](https://shaochien.gitbooks.io/command-line-and-environment-variable-tutorial/content/environment-variable.html) 裡
+- 將剛剛下載 driver 的目錄設定到 [環境變數](https://shaochien.gitbooks.io/command-line-and-environment-variable-tutorial/content/environment-variable.html) 的 PATH 裡
 - 點擊 [build.sh](https://github.com/TerryLee7788/AutomationVersion/blob/master/build.sh)
 
 ### 持續更新...
