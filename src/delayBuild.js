@@ -5,8 +5,7 @@ const {
 const { exec } = require("child_process")
 
 // {MINUTE} 分鐘
-// let time = MINUTE * 60 * 1000
-let time = 5 * 1000
+let time = MINUTE * 60 * 1000
 
 const timeCount = () => {
     console.log(`還有: ${time/1000} 秒`);
