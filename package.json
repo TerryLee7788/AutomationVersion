@@ -4,7 +4,7 @@
   "description": "自動上版",
   "main": "index.js",
   "scripts": {
-    "test:mocha": "mocha --color ./src/index.js",
+    "test:mocha": "mocha ./src/index.js --timeout 10000",
     "delayBuild": "node ./src/delayBuild.js"
   },
   "repository": {
