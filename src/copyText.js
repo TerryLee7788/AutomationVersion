@@ -5,8 +5,7 @@ const {
     MINUTE
 } = require('./config')
 
-const BUFFER_MIN = 1
-const delayTime = (+MINUTE + BUFFER_MIN) * 60 * 1000
+const delayTime = MINUTE * 60 * 1000
 
 const nowTimeStamp = new Date().getTime()
 const buildTime = new Date(nowTimeStamp + delayTime)
