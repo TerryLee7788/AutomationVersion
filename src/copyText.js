@@ -13,4 +13,4 @@ const buildTime = new Date(nowTimeStamp + delayTime)
 const buildHour = buildTime.getHours()
 const buildMinutes = buildTime.getMinutes()
 
-clipboardy.writeSync(`'${BRANCH}' 分支預計 ${buildHour}:${buildMinutes} 推上 LAB 區`);
+clipboardy.writeSync(`@B2C_RD '${BRANCH}' 分支預計 ${buildHour}:${buildMinutes} 推上 LAB 區`);

@@ -15,7 +15,7 @@
 |Name|Description|
 |--|--|
 |URL|Lab Jenkins B2C 連結|
-|BRANCH|Lab 想上的 branch (完整的名稱，不能只有 0909 這種)|
+|BRANCH|Lab 想上的 branch (完整的名稱，不能只有 0909 這種，可以這樣寫: "feature/20201028")|
 |USER_NAME|Lab Jenkins 帳號|
 |PASS_WORD|Lab Jenkins 密碼|
 |MINUTE|延遲時間(分鐘)|

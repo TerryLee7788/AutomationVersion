@@ -21,7 +21,7 @@ const page = {
         password: 'j_password',
         buildLinkText: 'Build with Parameters',
         buildSelect: 'select',
-        branchOption: `option[value="${BRANCH}"]`,
+        branchOption: `option[value="origin/${BRANCH}"]`,
     }
 }
 const selectors = page.selectors
