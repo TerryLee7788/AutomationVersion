@@ -5,7 +5,7 @@ const {
     MINUTE
 } = require('./config')
 
-const BUFFER = 30 * 1000
+const BUFFER = 20 * 1000
 const delayTime = (MINUTE * 60 * 1000) + BUFFER
 
 const nowTimeStamp = new Date().getTime()
