@@ -53,6 +53,7 @@ class Jenkins {
         it('是否在 [登入] 頁面', (done) => {
             (async () => {
                 try {
+                    await driver.wait(until.elementLocated(By.id(selectors.loginBtn)), 30 * 1000)
                     const element = await driver.findElement(By.id(selectors.loginBtn));
                     await assert.notEqual(element, null)
                     await done()
