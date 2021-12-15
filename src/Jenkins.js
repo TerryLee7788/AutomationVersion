@@ -14,13 +14,14 @@ const {
 
 const page = {
     title: 'Lab_Publish_New [EHS » Web] [Jenkins]',
+    loginTitle: 'Sign in [Jenkins]',
     selectors: {
         loginLink: '.login a',
-        loginBtn: 'yui-gen1-button',
+        loginBtn: '.submit-button',
         username: 'j_username',
         password: 'j_password',
         buildLinkText: 'Build with Parameters',
-        buildSelect: 'select',
+        buildSelect: '.gitParameterSelect',
         branchOption: `option[value="origin/${BRANCH}"]`,
     }
 }
@@ -53,14 +54,11 @@ class Jenkins {
         it('是否在 [登入] 頁面', (done) => {
             (async () => {
                 try {
-                    await driver.wait(until.elementLocated(By.id(selectors.loginBtn)), 30 * 1000)
-                    const element = await driver.findElement(By.id(selectors.loginBtn));
-                    await assert.notEqual(element, null)
+                    const title = await driver.getTitle()
+                    await assert.equal(title, page.loginTitle)
                     await done()
-                }
-                catch (error) {
+                } catch (error) {
                     await done(error)
-                    throw('沒有登入按鈕！')
                 }
             })()
         })
@@ -93,7 +91,7 @@ class Jenkins {
         it('是否在 [Pipeline Lab_Publish_New] 頁面', (done) => {
             (async () => {
                 try {
-                    const element = await driver.findElement(By.id(selectors.buildSelect));
+                    const element = await driver.findElement(By.css(selectors.buildSelect));
                     await assert.notEqual(element, null)
                 }
                 catch (error) {
@@ -104,7 +102,7 @@ class Jenkins {
         })
         it(`選擇 [branch]: ${BRANCH}`, (done) => {
             (async () => {
-                const selectElem = await driver.findElement(By.id(selectors.buildSelect));
+                const selectElem = await driver.findElement(By.css(selectors.buildSelect));
                 await selectElem.click();
                 await driver.wait(until.elementLocated(By.css(selectors.branchOption)), 30 * 1000)
                 await selectElem.findElement(By.css(selectors.branchOption)).click()
