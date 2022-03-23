@@ -1,3 +1,4 @@
+require('chromedriver')
 const {
     Builder
 } = require('selenium-webdriver');
