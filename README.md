@@ -8,10 +8,9 @@
 ## Usage
 - [Clone this repository](https://github.com/TerryLee7788/AutomationVersion)
 - `npm i` 安裝套件
-- 下載 [chromedriver](http://chromedriver.storage.googleapis.com/index.html) 依照電腦 chrome 的版本下載
-- 將剛剛下載 driver 的目錄設定到 [環境變數](https://shaochien.gitbooks.io/command-line-and-environment-variable-tutorial/content/environment-variable.html) 的 PATH 裡
 - 設置 [.env](https://github.com/TerryLee7788/AutomationVersion/blob/master/.env) 檔案
-- #### [.env](https://github.com/TerryLee7788/AutomationVersion/blob/master/.env) Overview
+
+## [.env](https://github.com/TerryLee7788/AutomationVersion/blob/master/.env) Overview
 |Name|Description|
 |--|--|
 |URL|Lab Jenkins B2C 連結|
@@ -20,4 +19,3 @@
 |PASS_WORD|Lab Jenkins 密碼|
 |MINUTE|延遲時間(分鐘)|
 - 點擊 [delayBuild.sh](https://github.com/TerryLee7788/AutomationVersion/blob/master/sh/delayBuild.sh)
-
