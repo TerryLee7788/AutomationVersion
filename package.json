@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:mocha": "mocha ./src/index.js --timeout 10000 --color",
+    "test:mochaTestBuild": "mocha ./src/index.js --timeout 10000 --color --testBuild",
     "delayBuild": "node ./src/delayBuild.js",
     "copyText": "node ./src/copyText.js"
   },
@@ -23,10 +24,13 @@
   "homepage": "https://github.com/TerryLee7788/AutomationVersion#readme",
   "devDependencies": {
     "assert": "^2.0.0",
-    "chromedriver": "^100.0.0",
+    "chromedriver": "^105.0.0",
     "clipboardy": "^2.3.0",
     "dotenv": "^8.2.0",
     "mocha": "^5.2.0",
     "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^3.0.2"
   }
 }

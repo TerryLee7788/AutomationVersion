@@ -12,6 +12,9 @@ const {
     PASS_WORD
 } = require('./config')
 
+const { npm_lifecycle_event, NODE_ENV } = process.env
+const isTestBuild = npm_lifecycle_event === 'test:mochaTestBuild'
+
 const page = {
     title: 'Lab_Publish_New [EHS » Web] [Jenkins]',
     loginTitle: 'Sign in [Jenkins]',
@@ -110,6 +113,7 @@ class Jenkins {
             })()
         })
         it('點擊 [建置] 按鈕', (done) => {
+            if (isTestBuild) { return }
             (async () => {
                 await driver.sleep(2000)
                 const selectElem = await driver.findElement(By.name('Submit'))
